@@ -1,0 +1,56 @@
+.listagemGeralQuiz{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+.topo{
+    display: flex; 
+    align-items: center;
+    background-color: #800000;
+    color: #FFF;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+.listaDeQuiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.listaDeQuiz li:first-child{
+    background:#FFA07A;
+    color: #FFF;
+}
+.listaDeQuiz li{
+    background:#B22222;
+    color: #FFF;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 180px; 
+    width: 150px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 8px #888888;
+    padding: 25px;
+}
+.listaDeQuiz li:hover{
+    cursor: pointer;
+}
+
+
+
+
+.telaLogin{
+    display: none;
+}
+.criacaoQuiz{
+    display: none;
+}
+.fimQuiz{
+    display: none;
+}
