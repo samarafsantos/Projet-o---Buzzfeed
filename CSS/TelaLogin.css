@@ -1,0 +1,61 @@
+.telaLogin{
+    font-family: 'Roboto', sans-serif;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.telaLogin h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.telaLogin p{
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.menuEntrada{
+    background-color: #6a90bd;
+    height: 180px;
+    width: 280px;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menuEntrada input{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+}
+.menuEntrada input::placeholder{
+    font-size: 16px;
+    opacity: 0.5;
+}
+.menuEntrada button{
+    margin-top: 5px;
+    background: #3a385b;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.listagemQuiz{
+    display: none;
+}
+.criacaoQuiz{
+    display: none;
+}
+.fimQuiz{
+    display: none;
+}
