@@ -1,6 +1,14 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
 .listagemGeralQuiz{
-    display: block;
+    display: none;
     font-family: 'Roboto', sans-serif;
+    background: url("../Imagens/3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 .topo{
     display: flex; 
@@ -40,17 +48,4 @@
 }
 .listaDeQuiz li:hover{
     cursor: pointer;
-}
-
-
-
-
-.telaLogin{
-    display: none;
-}
-.criacaoQuiz{
-    display: none;
-}
-.fimQuiz{
-    display: none;
 }

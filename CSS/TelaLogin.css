@@ -1,39 +1,51 @@
 .telaLogin{
+    width: 100vw;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     display:flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: url("../Imagens/1.jpg");
+    background-size: cover;
 }
 .telaLogin h1{
     font-size: 40px;
     font-weight: bold;
-    margin-top: 60px;
     margin-bottom: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    color: #a076a0;
 }
 .telaLogin p{
     font-size: 22px;
     font-weight: lighter;
     margin-bottom: 30px;
+    box-shadow: 10px 10px 8px #888888;
+    color: #705470;
 }
 .menuEntrada{
-    background-color: #6a90bd;
+    background: url("../Imagens/4.jpg");
     height: 180px;
     width: 280px;
     display:flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    padding: 15px;
 }
 .menuEntrada input{
     width: 90%;
     height: 50px;
     margin-bottom: 10px;
     border: none;
+    padding-left: 10px;
 }
 .menuEntrada input::placeholder{
     font-size: 16px;
     opacity: 0.5;
+    padding-left: 0;
 }
 .menuEntrada button{
     margin-top: 5px;
@@ -43,19 +55,9 @@
     width: 100px;
     color: #FFF;
     font-size: 16px;
+    border-radius: 5px;
+}
+.menuEntrada button:hover{
+    cursor: pointer;
 }
 
-
-
-
-
-
-.listagemQuiz{
-    display: none;
-}
-.criacaoQuiz{
-    display: none;
-}
-.fimQuiz{
-    display: none;
-}
