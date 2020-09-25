@@ -27,6 +27,7 @@ function exibirQuiz(elemento){
     }
     console.log(retornoServidor);
 }
+
 function renderizarPerguntas(cardSelecionado){
     console.log(contador);
     console.log(cardSelecionado);
@@ -154,50 +155,15 @@ function validarResposta(elemento){
     qtdPerguntas = cardSelecionado.data.perguntas.length;
     if(contador === qtdPerguntas){
         console.log("time to go");
+        quiz.style.display = "none";
+        fimQuiz.style.display = "flex";
+        avaliarNivel();
     }
     else{
         setTimeout(renderizarPerguntas.bind(null, cardSelecionado), 2000);
     }
-    
-    //setTimeout(renderizarPerguntas, 5000);
-    
-    //contador++;
-    //setInterval(proximaPag(), 2000);
 }
-// function proximaPag(){
-//     console.log(retornoServidor.data.length);
-//     console.log(qtdPerguntas);
-//     if (contador===qtdPerguntas){
-//         console.log("fim do quiz");
-//         //fimQuiz();
-//     }
-//     else{
-//         contador++;
 
-//         console.log("proxima pergunta");
-//     }
-//     // var qtdPerguntas = arrayObj.
-// }
 function comparador() { 
     return Math.random() - 0.5; 
   }
-{/* <h1>Título do Quiz</h1>
-<div class="pergunta">1. Pergunta 1</div>
-<div class="container">
-    <div class="op">
-        <img src="https://images.unsplash.com/photo-1452190157845-c572fad44fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-        <p>Opção 1</p>
-    </div>
-    <div class="op">
-        <img src="https://images.unsplash.com/photo-1452190157845-c572fad44fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-        <p>Opção 2</p>
-    </div>
-    <div class="op">
-        <img src="https://images.unsplash.com/photo-1452190157845-c572fad44fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-        <p>Opção 3</p>
-    </div>
-    <div class="op">
-        <img src="https://images.unsplash.com/photo-1452190157845-c572fad44fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-        <p>Opção 4</p>
-    </div>
-</div> */}
