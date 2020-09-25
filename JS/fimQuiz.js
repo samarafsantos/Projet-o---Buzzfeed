@@ -8,10 +8,8 @@ function avaliarNivel(){
     var tituloNivel=0, descricao=0, linkImagem=0;
     var percentual = parseInt(((contadorAcertos/qtdPerguntas)*100).toFixed(0));
     for(var i=0; i<cardSelecionado.data.niveis.length; i++){
-        console.log(percentual);
         var min = cardSelecionado.data.niveis[i].min;
         var max = cardSelecionado.data.niveis[i].max;
-        console.log(cardSelecionado);
         if (percentual >= min){
             console.log("entrou no 1 if");
             if(percentual <= max){
@@ -24,11 +22,7 @@ function avaliarNivel(){
         }
        
     }
-    console.log(tituloNivel);
-    console.log(descricao);
-    console.log(linkImagem);
     criarEstrutura(tituloNivel, descricao, linkImagem, percentual);
-    console.log
 }
 function criarEstrutura(tituloNivel, descricao, linkImagem, percentual){
     var h1 = document.createElement("h1");
@@ -74,20 +68,3 @@ function criarEstrutura(tituloNivel, descricao, linkImagem, percentual){
 
     divImagem.appendChild(imagem);
 }
-
-// <h1>BLA BLA BLA BLA</h1>
-// <div class="container">
-//     <div class="acertos">
-//         <p>Você acertou tanto de tantas perguntas!</p>
-//         <p>Score: x%</p>
-//     </div>
-//     <span>
-//         <div class="textoResultado">
-//             <h2>Você é praticamente tananananana</h2>
-//             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magnam at incidunt voluptate quae illum optio, laborum illo voluptatem similique ullam molestiae vero iure cupiditate provident, eveniet in, fugiat quos?</p>
-//         </div>
-//         <div class="imagem">
-//             <img src="https://images.unsplash.com/photo-1551499779-ee50f1aa4d25?ixlib=rb-1.2.1&w=1000&q=80" alt="">
-//         </div>
-//     </span>
-// </div>

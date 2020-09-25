@@ -40,9 +40,9 @@
     flex-wrap: wrap;
     padding-bottom: 30px;
     padding-top: 30px;
-    border: 1px solid #b4a0b4;
+    border: 1px solid #c4bbb9;
     box-shadow: 1px 2px 8px #888888;
-    background: rgba(255, 240, 245, 0.5);
+    background: 	#e4e5e6af;
 }
 .quiz .container img{
     width: 280px;
@@ -86,7 +86,7 @@
     border: 1px solid #b4a0b4;
 }
 
-/* ------------------- MOBILE -------------------- */
+/* ------------------- ALTERAÇÕES JS -------------------- */
 @media(max-width: 600px){
     .quiz h1{
         text-align: center;
