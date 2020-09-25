@@ -140,7 +140,7 @@ function validarResposta(elemento){
     if(contador === qtdPerguntas){
         quiz.style.display = "none";
         fimQuiz.style.display = "flex";
-        setTimeout(avaliarNivel(), 2000);
+        setTimeout(avaliarNivel, 500);
     }
     else{
         setTimeout(renderizarPerguntas.bind(null, cardSelecionado), 2000);
