@@ -10,7 +10,7 @@ body{
     width: 100%;
     height: 100%;
 }
-.topo{
+.listagemGeralQuiz .topo{
     display: flex; 
     align-items: center;
     background-color: #800000;

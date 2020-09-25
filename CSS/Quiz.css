@@ -3,22 +3,22 @@
     flex-direction: column;
     align-items: center;
     width: 100%; 
-    height: 100%;
     background: #FFF0F5;
+    background-size: 100%;
+    padding-bottom: 45px;
 }
 .quiz .topo{
     display: flex; 
     align-items: center;
     background: url("https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-1.2.1&w=1000&q=80");
-    background-size: 100%;
-    /* background-color: 	#FFF0F5; */
+    background-size: cover;
     color: #FFF;
     height: 50px;
     width: 100%;
     font-size: 30px;
     font-weight: bold;
-    padding-left: 15px;
     margin-bottom: 45px;
+    padding: 15px;
     box-shadow: 1px 2px 8px #888888;
 }
 .quiz .container{
@@ -27,6 +27,10 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
+    padding-top: 30px;
+    border: 1px solid #b4a0b4;
+    box-shadow: 1px 2px 8px #888888;
+    background: rgba(255, 240, 245, 0.5);
 }
 .quiz .container img{
     width: 280px;
@@ -34,11 +38,30 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-.quiz .container .op{
-    margin: 15px;
+.certo{
+    border-radius: 10px;
+    border: 5px solid green; 
+}
+.errado{
+    border-radius: 10px;
+    border: 5px solid red;
+}
+.normal{
     border-radius: 10px;
     border: 1px solid #b4a0b4;
 }
+.op{
+    margin: 15px;
+}
+/* .op .certo{
+
+}
+.op .errado{
+
+    border-radius: 10px;
+    border: 5px solid red;
+} */
+
 .quiz .container .op:hover{
     cursor: pointer;
 }
@@ -61,4 +84,3 @@
     font-size: 35px;
     color: #b4a0b4;
 }
-

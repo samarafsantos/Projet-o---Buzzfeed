@@ -8,7 +8,7 @@
     color: #f07474;
     background: url("https://images.unsplash.com/photo-1464376810568-596bdd5a1897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80")
 }
-.topo{
+.fimQuiz .topo{
     display: flex; 
     align-items: center;
     background-color: 	#FFF0F5;
@@ -26,7 +26,7 @@
     color: #f07474;
     margin-bottom: 15px;
 }
-.container{
+.fimQuiz .container{
     width: 50%;
     border: 1px solid #f07474;
     box-shadow: 1px 2px 8px #888888;
