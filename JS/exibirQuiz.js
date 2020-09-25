@@ -141,7 +141,6 @@ function validarResposta(elemento){
         quiz.style.display = "none";
         fimQuiz.style.display = "flex";
         setTimeout(avaliarNivel(), 2000);
-        avaliarNivel();
     }
     else{
         setTimeout(renderizarPerguntas.bind(null, cardSelecionado), 2000);

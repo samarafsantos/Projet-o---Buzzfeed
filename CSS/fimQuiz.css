@@ -38,6 +38,7 @@
     border: 1px solid #323443;
     box-shadow: 1px 2px 8px #888888;
     background: rgba(255, 255, 255, 0.822);
+    padding: 10px;
 }
 .container .acertos{
     width: 95%;
