@@ -157,6 +157,7 @@ function validarResposta(elemento){
         console.log("time to go");
         quiz.style.display = "none";
         fimQuiz.style.display = "flex";
+        setTimeout(avaliarNivel(), 2000);
         avaliarNivel();
     }
     else{

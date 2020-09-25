@@ -20,7 +20,7 @@ var quizOBJ = {
 
 function layoutPergunta(){
     var perguntas = criacaoQuiz.querySelector(".perguntas");
-    var pergunta = document.createElement("div")
+    var pergunta = document.createElement("div");
     pergunta.setAttribute("class", "pergunta");
 
     var h1 = document.createElement("h1");
@@ -144,6 +144,7 @@ function montarOBJNiveis(){
     console.log(listaNiveis);
     for(i=0; i<listaNiveis.length; i++){
         var tituloNivel = listaNiveis[i].children[2].value;
+        
         var linkNivel = listaNiveis[i].children[3].value;
         var descricaoNivel = listaNiveis[i].children[4].value;
         var minNivel = listaNiveis[i].children[1].children[0].value;
@@ -154,9 +155,11 @@ function montarOBJNiveis(){
         }
         quizOBJ.data.niveis[i].min = minNivel;
         quizOBJ.data.niveis[i].max = maxNivel;
+
         quizOBJ.data.niveis[i].tituloNivel = tituloNivel;
         quizOBJ.data.niveis[i].linkImagem = linkNivel;
         quizOBJ.data.niveis[i].descricao = descricaoNivel;
+        console.log(quizOBJ);
     }
 }
 function validar(){
@@ -232,7 +235,7 @@ function validaNiveis(){
         concate = maiuscula.concat(divide);
         concate.trim();
         concate = concate.replace(/\s+/g, " ");
-        quizOBJ.data.niveis[i].tituloNivel = concate;
+        quizOBJ.data.niveis[i].descricao = concate;
     }
 }
 function publicar(){

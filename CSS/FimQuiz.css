@@ -5,14 +5,16 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Merriweather', serif;
-    color: #f07474;
-    background: url("https://images.unsplash.com/photo-1464376810568-596bdd5a1897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80")
+    color: #424453d5;
+    /* background: url("https://images.unsplash.com/photo-1464376810568-596bdd5a1897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80") */
+    background: url("https://imgix.bustle.com/uploads/shutterstock/2020/3/25/72415f8c-3e06-40fc-b5a6-32fd76c7b567-shutterstock-1270572721.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70");
+    background-size: cover;
 }
 .fimQuiz .topo{
     display: flex; 
     align-items: center;
-    background-color: 	#FFF0F5;
-    color: #f07474;
+    background-color: 	#e4e5e6;
+    color: #424453d5;
     height: 50px;
     width: 100%;
     font-size: 30px;
@@ -23,17 +25,21 @@
 }
 .fimQuiz h1{
     font-size: 30px;
-    color: #f07474;
+    color: #323443be;
     margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.822);
+    box-shadow: 1px 2px 8px #888888;
+    padding: 5px;
 }
 .fimQuiz .container{
     width: 50%;
-    border: 1px solid #f07474;
+    border: 1px solid #323443;
     box-shadow: 1px 2px 8px #888888;
+    background: rgba(255, 255, 255, 0.822);
 }
 .container .acertos{
     width: 95%;
-    background:  #FFF0F5;
+    background:  #c0dcdd;
     font-size: 25px; 
     padding: 25px 15px;
     text-align: center;

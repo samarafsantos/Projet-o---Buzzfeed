@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url("../Imagens/1.jpg");
+    background: url("https://imgix.bustle.com/uploads/shutterstock/2020/3/25/72415f8c-3e06-40fc-b5a6-32fd76c7b567-shutterstock-1270572721.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70");
     background-size: cover;
 }
 .telaLogin h1{
@@ -14,17 +14,20 @@
     font-weight: bold;
     margin-bottom: 10px;
     box-shadow: 10px 10px 8px #888888;
-    color: #a076a0;
+    /* color: 	#9c829f; */
+    color: #99698d;
 }
 .telaLogin p{
     font-size: 22px;
     font-weight: lighter;
     margin-bottom: 30px;
     box-shadow: 10px 10px 8px #888888;
-    color: #705470;
+    color: #99698d;
 }
 .menuEntrada{
+    /* background: url("../Imagens/4.jpg"); */
     background: url("../Imagens/4.jpg");
+    background-size: cover;
     height: 180px;
     width: 280px;
     display:flex; 
