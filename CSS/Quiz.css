@@ -53,15 +53,6 @@
 .op{
     margin: 15px;
 }
-/* .op .certo{
-
-}
-.op .errado{
-
-    border-radius: 10px;
-    border: 5px solid red;
-} */
-
 .quiz .container .op:hover{
     cursor: pointer;
 }
@@ -83,4 +74,25 @@
     margin: 10px 0 20px 0;
     font-size: 35px;
     color: #b4a0b4;
+}
+
+@media(max-width: 600px){
+    .quiz h1{
+        text-align: center;
+    }
+    .quiz .pergunta{
+        width: 90%;
+        height: unset;
+        font-size: 25px;
+        padding: 5px;
+    }
+    .quiz .container{
+        width: 90%;
+    }
+    .op{
+        width: 80%;
+    }
+    .quiz .container img{
+        width: 100%;
+    }
 }

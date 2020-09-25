@@ -105,3 +105,26 @@ input::placeholder{
     border-radius: 10px;
     font-size: 20px;
 }
+
+@media(max-width: 600px){
+    .criacaoQuiz > input{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    input{
+        padding-left: 5px;
+        width: unset;
+    }
+    .pergunta, .nivel{
+        width: 80%;
+    }
+    input::placeholder{
+        padding-left: 5px;
+    }
+    .pergunta > div, .percentual{
+        flex-direction: column;
+    }
+
+
+
+}

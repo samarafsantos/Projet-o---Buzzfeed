@@ -62,3 +62,37 @@
     font-size: 15px;
     padding: 0 15px
 }
+
+@media(max-width: 600px){
+    .fimQuiz .topo{
+        padding: 15px;
+    }
+    .fimQuiz h1{
+        text-align: center;
+    }
+    .fimQuiz .container{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .fimQuiz{
+        width: 100%;
+        height: unset;
+        background-size: cover;
+    }
+    .container .acertos{
+        margin: 5px;
+    }
+    .container > span{
+        flex-direction: column;
+        width: 100%;
+    }
+    .textoResultado, .imagem{
+        width: 100%;
+    }
+    .textoResultado h2{
+        width: 100%;
+    }
+    .textoResultado p{
+        width: 100%;
+    }
+}
