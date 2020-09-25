@@ -71,6 +71,7 @@ function layoutPergunta(){
     divLink.appendChild(inputLink4);
     contadorPergunta ++;
 }
+
 function layoutNivel(){
     var niveis = criacaoQuiz.querySelector(".niveis");
 
@@ -106,17 +107,18 @@ function layoutNivel(){
 
     contadorNivel++;
 }
+
 function montarOBJ(){
     montarOBJPerguntas();
     montarOBJNiveis();
     validar();
 }
+
 function montarOBJPerguntas(){
     var titulo = criacaoQuiz.querySelector("input").value;
     quizOBJ.title = titulo;
     var containerPerguntas = criacaoQuiz.querySelector(".perguntas");
     var listaPerguntas = containerPerguntas.querySelectorAll(".pergunta");
-    console.log(listaPerguntas);
     for(i=0; i<listaPerguntas.length; i++){
         var inputPergunta = listaPerguntas[i].children[1].value;
         if(quizOBJ.data.perguntas[i] === undefined){
@@ -138,10 +140,10 @@ function montarOBJPerguntas(){
         quizOBJ.data.perguntas[i].respostaCerta = listaPerguntas[i].children[2].children[0].children[0].value;
     }
 }
+
 function montarOBJNiveis(){
     var containerNiveis = criacaoQuiz.querySelector(".niveis");
     var listaNiveis = containerNiveis.querySelectorAll(".nivel");
-    console.log(listaNiveis);
     for(i=0; i<listaNiveis.length; i++){
         var tituloNivel = listaNiveis[i].children[2].value;
         
@@ -159,9 +161,9 @@ function montarOBJNiveis(){
         quizOBJ.data.niveis[i].tituloNivel = tituloNivel;
         quizOBJ.data.niveis[i].linkImagem = linkNivel;
         quizOBJ.data.niveis[i].descricao = descricaoNivel;
-        console.log(quizOBJ);
     }
 }
+
 function validar(){
     validaTitulo();
     validaPerguntas();
@@ -169,6 +171,7 @@ function validar(){
     validaNiveis();
     publicar();
 }
+
 function validaTitulo(){
     var frase = quizOBJ.title;
     var maiuscula = frase.charAt(0).toUpperCase(); 
@@ -178,6 +181,7 @@ function validaTitulo(){
     concate = concate.replace(/\s+/g, " ");
     quizOBJ.title = concate;
 }
+
 function validaPerguntas(){
     var qtdPerguntas = quizOBJ.data.perguntas.length;
     for (var i=0; i<qtdPerguntas; i++){
@@ -195,6 +199,7 @@ function validaPerguntas(){
         quizOBJ.data.perguntas[i].tituloPergunta = concate;
     }
 }
+
 function validaRespostas(){
     var qtdPerguntas = quizOBJ.data.perguntas.length;
     for (var i=0; i<qtdPerguntas; i++){
@@ -218,6 +223,7 @@ function validaRespostas(){
     }
     
 }
+
 function validaNiveis(){
     var qtdNiveis = quizOBJ.data.niveis.length;
     for (var i=0; i<qtdNiveis; i++){
@@ -238,11 +244,12 @@ function validaNiveis(){
         quizOBJ.data.niveis[i].descricao = concate;
     }
 }
+
 function publicar(){
-    console.log("showwwww");
     var requisicao = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v1/buzzquizz/quizzes", quizOBJ, {headers: {'User-token': token}})
     requisicao.then(mudarTela);
 }
+
 function mudarTela(){
     listagemQuiz.style.display = "block";
     criacaoQuiz.style.display = "none";

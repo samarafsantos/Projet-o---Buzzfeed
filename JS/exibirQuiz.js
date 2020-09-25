@@ -1,4 +1,3 @@
-
 quiz = document.querySelector(".quiz");
 var arrayObj = [];
 var arrayEmbaralhada = [];
@@ -13,25 +12,16 @@ function exibirQuiz(elemento){
     quiz.style.display = "flex";
     var idSelecionado = elemento.id;
     
-    for(var i=0; i<retornoServidor.data.length; i++){
-        console.log("entrou no for");
-        console.log("id do servidor: "+retornoServidor.data[i].id);
-        console.log("id do card: "+idSelecionado);
-        
+    for(var i = 0; i < retornoServidor.data.length; i++){
         if(retornoServidor.data[i].id == idSelecionado){
-            console.log("Entrou no if com i="+i);
             cardSelecionado = retornoServidor.data[i];
-            console.log(cardSelecionado);
             renderizarPerguntas(cardSelecionado);
         }
     }
-    console.log(retornoServidor);
 }
 
 function renderizarPerguntas(cardSelecionado){
-    console.log(contador);
-    console.log(cardSelecionado);
-    for(var j=0; j<4; j++){
+    for(var j = 0; j < 4; j++){
         arrayObj[j] = cardSelecionado.data.perguntas[contador].respostas[j];
     }
     arrayEmbaralhada = arrayObj.sort(comparador);
@@ -39,11 +29,9 @@ function renderizarPerguntas(cardSelecionado){
     
     var tituloDoQuiz = document.createElement("h1");
     tituloDoQuiz.id = "titulo "+contador;
-    console.log(contador);
-    if(contador!==0){
+    if(contador !== 0){
         var contadorAnterior = contador-1;
         var anterior = document.getElementById("titulo "+contadorAnterior);
-        console.log(anterior);
         anterior.style.display = "none";
     }
 
@@ -54,18 +42,16 @@ function renderizarPerguntas(cardSelecionado){
     divPergunta.setAttribute("class", "pergunta");
     divPergunta.innerHTML = "1. "+cardSelecionado.data.perguntas[contador].tituloPergunta;
     divPergunta.id = "Pergunta "+contador;
-    console.log(contador);
-    if(contador!==0){
+    if(contador !== 0){
         var contadorAnterior = contador-1;
         var anterior = document.getElementById("Pergunta "+contadorAnterior);
-        console.log(anterior);
         anterior.style.display = "none";
     }
 
 
     var divContainer = document.createElement("div");
     divContainer.setAttribute("class", "container");
-    if(contador===0){
+    if(contador === 0){
         divContainer.id = contador;
         divContainer.style.display = "flex";
     }
@@ -132,14 +118,12 @@ function renderizarPerguntas(cardSelecionado){
 function validarResposta(elemento){
     var container = elemento.parentNode;
     var lista = container.querySelectorAll("p");
-    console.log(elemento.innerText);
-    console.log(respCerta);
-    if(elemento.innerText===respCerta){
+    if(elemento.innerText === respCerta){
         elemento.classList.remove("normal");
         elemento.classList.add("certo");
         contadorAcertos++;
     }
-    for(var i=0; i<4;i++){
+    for(var i = 0; i < 4;i++){
         if(lista[i].innerText === respCerta){
             var correcao = lista[i].parentNode;
             correcao.classList.remove("normal");
@@ -154,7 +138,6 @@ function validarResposta(elemento){
     contador++;
     qtdPerguntas = cardSelecionado.data.perguntas.length;
     if(contador === qtdPerguntas){
-        console.log("time to go");
         quiz.style.display = "none";
         fimQuiz.style.display = "flex";
         setTimeout(avaliarNivel(), 2000);

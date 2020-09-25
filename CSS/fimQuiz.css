@@ -1,3 +1,4 @@
+/* ------------------- GERAL -------------------- */
 .fimQuiz{
     width: 100vw; 
     height: 100vh;
@@ -6,7 +7,6 @@
     align-items: center;
     font-family: 'Merriweather', serif;
     color: #424453d5;
-    /* background: url("https://images.unsplash.com/photo-1464376810568-596bdd5a1897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80") */
     background: url("https://imgix.bustle.com/uploads/shutterstock/2020/3/25/72415f8c-3e06-40fc-b5a6-32fd76c7b567-shutterstock-1270572721.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70");
     background-size: cover;
 }
@@ -31,6 +31,8 @@
     box-shadow: 1px 2px 8px #888888;
     padding: 5px;
 }
+
+/* ------------------- CONTAINER -------------------- */
 .fimQuiz .container{
     width: 50%;
     border: 1px solid #323443;
@@ -53,6 +55,8 @@
     display: flex;
     justify-content: center;
 }
+
+/* ------------------- TEXTO - CONTAINER -------------------- */
 .textoResultado, .imagem{
     width: 50%;
     text-align: left;
@@ -69,6 +73,7 @@
     padding: 0 15px
 }
 
+/* ------------------- MOBILE -------------------- */
 @media(max-width: 600px){
     .fimQuiz .topo{
         padding: 15px;
@@ -92,13 +97,7 @@
         flex-direction: column;
         width: 100%;
     }
-    .textoResultado, .imagem{
-        width: 100%;
-    }
-    .textoResultado h2{
-        width: 100%;
-    }
-    .textoResultado p{
+    .textoResultado, .imagem, .textoResultado h2, .textoResultado p{
         width: 100%;
     }
 }
